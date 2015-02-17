@@ -14,7 +14,6 @@ $(function() {
         $divs.eq(d).offset(randomNum(maxHeight, maxWidth));
     }
 
-    // $("div").draggable();
 
     animateDiv($("#green"));
     animateDiv($("#pink"));
@@ -23,12 +22,29 @@ $(function() {
     animateDiv($("#white"));
     animateDiv($("#orange"));
 
-    $("div").one("click", splitToSmall);
+    $("#yellow").one("click", function() { splitToSmall(this); changeVideo(this); });
+    $("#orange").one("click", function() { splitToSmall(this); changeVideo(this); });
+    $("#purple").one("click", function() { splitToSmall(this); changeVideo(this); });
+    $("#pink").one("click", function() { splitToSmall(this); changeVideo(this); });
+    $("#green").one("click", function() { splitToSmall(this); changeVideo(this); });
+    $("#white").one("click", function() { splitToSmall(this); changeVideo(this); });
+
+    function changeVideo(e) {
+
+        var target = e;
+        
+        var which = $(target).attr("id");
+        var vidSrc = document.getElementById("vidBgPg");
+        vidSrc.src = "http://digitaleverything.net/demos/fluff/media/video/"+which+".mp4";
+
+        console.log("HRER-", e, target);
+    }
 
     function splitToSmall(e) {
+        
+        var target = e;
 
-    	var $this = $(e.target); //$(event.target);
-        // var $this = $(e);
+    	var $this = $(target);
 
     	for (var i = 1; i < 7; i++) {
     		$this.append("<div></div>");
@@ -51,12 +67,11 @@ $(function() {
             $(this).parent().remove();
         }
 
-    	console.log(e.target);
+    	console.log();
     }
 
     function newPosition() {
     
-        // Get viewport dimensions - the dimension of the div
         var h = $(window).height() - 227;
         var w = $(window).width() - 227;
         
@@ -76,25 +91,7 @@ $(function() {
         });
 
     };
-    var intv;
-    setTimeout(function() { intv = setInterval(produce, 1500); }, 5600);
 
-    function produce() {
-        var ranClr = ["clr1", "clr2", "clr3", "clr4", "clr5", "clr6"];
-        var ranI = Math.floor(Math.random() * ranClr.length );
-        // var $newDiv = $("<div></div>").addClass(ranClr[ranI]);
-        var $newDiv = $(document.createElement("div")).attr("class", ranClr[ranI]).
-            offset(randomNum(maxHeight, maxWidth)).one("click", splitToSmall);
-        $("body").append($newDiv);
-        $newDiv.hide().fadeIn();
-        animateDiv($newDiv);
-    }
-
-    setInterval(function() {
-        $("div").fadeOut(100, function() { $(this).remove(); });
-    }, 18500);
-
-    console.log();
-
+    
 
  });

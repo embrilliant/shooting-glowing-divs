@@ -9,8 +9,8 @@ body {
 
 audio {
     position: fixed;
-    bottom: 0px;
     right: 0px;
+    bottom: 0px;
     visibility: visible;
 }
 
@@ -37,31 +37,31 @@ div {
     position: absolute;
 }
 
-#white, .clr1 {
+#white {
     box-shadow: 10px 10px 240px 0px rgba(255, 255, 255, 0.8),
     inset 10px 10px 240px 0px rgba(255, 255, 255, 0.8);
     border-color: rgba(255, 255, 255, 0.4);
 }
 
-#pink, .clr2 {
+#pink {
     box-shadow: 10px 10px 240px 0px rgba(130, 199, 197, 0.8),
     inset 10px 10px 240px 0px rgba(130, 199, 197, 0.8);
     border-color: rgba(130, 199, 197, 0.4);
 }
 
-#purple, .clr3 {
+#purple {
     box-shadow: 10px 10px 240px 0px rgba(211, 168, 255, 0.8),
     inset 10px 10px 240px 0px rgba(211, 168, 255, 0.8);
     border-color: rgba(211, 168, 255, 0.4)
 }
 
-#yellow, .clr4 {
+#yellow {
     box-shadow: 10px 10px 240px 0px rgba(249, 165, 213, 0.8),
     inset 10px 10px 240px 0px rgba(249, 165, 213, 0.8);
     border-color: rgba(249, 165, 213, 0.4);
 }
 
-#green, .clr5 {
+#green {
     box-shadow: 10px 10px 240px 0px rgba(199, 255, 190, 0.8),
     inset 10px 10px 240px 0px rgba(199, 255, 190, 0.8);
     border-color: rgba(199, 255, 190, 0.4);
@@ -70,7 +70,7 @@ div {
     /*position: relative;*/
 }
 
-#orange, .clr6 {
+#orange {
     box-shadow: 10px 10px 240px 0px rgba(255, 181, 139, 0.8),
     inset 10px 10px 240px 0px rgba(255, 181, 139, 0.8);
     border-color: rgba(255, 181, 139, 0.4);
@@ -87,37 +87,37 @@ div > div {
 }
 
 
-#green div, .clr5 div {
+#green div {
     box-shadow: inset 2px 2px 50px 0px rgba(174, 226, 166, 0.8), 
     0px 0px 40px 0px rgba(174, 226, 166, 0.6);
     border-color: rgba(174, 226, 166, 0.4);
 }
 
-#yellow div, .clr4 div {
+#yellow div {
     box-shadow: inset 2px 2px 50px 0px rgba(255, 119, 189, 0.8), 
     0px 0px 40px 0px rgba(255, 119, 189, 0.6);
     border-color: rgba(255, 119, 189, 0.4);
 }
 
-#purple div, .clr3 div {
+#purple div {
     box-shadow: inset 2px 2px 50px 0px rgba(211, 168, 255, 0.8), 
     0px 0px 40px 0px rgba(211, 168, 255, 0.6);
     border-color: rgba(211, 168, 255, 0.4);
 }
 
-#white div, .clr1 div {
+#white div {
     box-shadow: inset 2px 2px 50px 0px rgba(255, 255, 255, 0.8), 
     0px 0px 40px 0px rgba(255, 255, 255, 0.6);
     border-color: rgba(255, 255, 255, 0.4);
 }
 
-#orange div, .clr6 div {
+#orange div {
     box-shadow: inset 2px 2px 50px 0px rgba(255, 181, 139, 0.8), 
     0px 0px 40px 0px rgba(255, 181, 139, 0.6);
     border-color: rgba(255, 181, 139, 0.4);
 }
 
-#pink div, .clr2 div {
+#pink div {
     box-shadow: inset 2px 2px 50px 0px rgba(130, 199, 197, 0.8), 
     0px 0px 40px 0px rgba(130, 199, 197, 0.6);
     border-color: rgba(130, 199, 197, 0.4);
